@@ -1,0 +1,443 @@
+:root {
+    --primary-color: red;
+    --secondary-color: rgb(217, 212, 212);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    padding: 20px 0;
+
+}
+
+.navbar .logo {
+    width: 60px;
+}
+
+.navbar .logo-right {
+    width: 80px;
+}
+
+.nav-item {
+    padding: 0 15px;
+    font-weight: 700;
+}
+
+.nav-item a {
+    color: aliceblue;
+}
+
+.nav-item .home {
+    color: var(--primary-color);
+}
+
+.back {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.366), rgba(0, 0, 0, 0.106)), url(../images/backimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+.back .content {
+    padding-top: 150px;
+}
+
+
+
+
+.back .content h1 {
+    font-weight: 900;
+    color: aliceblue;
+    font-size: 60px;
+}
+
+.back .content p {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+
+
+.back .content .bti {
+    padding: 10px 28px;
+    background-color: var(--primary-color);
+    color: aliceblue;
+    border: none;
+    font-weight: 700;
+}
+
+
+
+.back .content .bt {
+    padding: 10px 15px;
+    background-color: aliceblue;
+    color: var(--primary-color);
+    border: none;
+    font-weight: 700;
+}
+
+
+
+
+.about {
+    padding: 100px 0;
+
+}
+
+.about img {
+    width: 500px;
+}
+
+.about .aboutcontent {
+    padding-top: 60px;
+}
+
+.about .aboutcontent h1 {
+    font-weight: bolder;
+}
+
+.about .aboutcontent a {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.red {
+    background-color: var(--primary-color);
+    padding: 100px 0;
+
+}
+
+.red .textleft {
+    color: aliceblue;
+    padding-top: 80px;
+}
+
+.red .textleft h2 {
+    font-weight: bolder;
+}
+
+.red .textright h1 {
+    color: aliceblue;
+}
+
+
+.experince {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.experince h1 {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+
+.experince .exp {
+    padding: 0 70px;
+}
+
+
+
+
+.img-text {
+    text-align: center;
+    display: block;
+    color: black;
+    padding-top: 25px;
+}
+
+.img-text h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+
+}
+
+.img-text p {
+    font-size: 15px;
+}
+
+.single-box-red .img-text {
+    text-align: center;
+    display: block;
+    color: aliceblue;
+    padding-top: 25px;
+}
+
+.single-box-red .img-text h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+
+}
+
+.single-box-red .img-text p {
+    font-size: 15px;
+}
+
+.single-box {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+}
+
+.single-box-red {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+}
+
+.img-area img {
+
+    width: 50px;
+}
+
+.carousel-indicators {
+    top: auto;
+    left: 0;
+    bottom: -70px;
+}
+
+.carousel-indicators button {
+    background-color: black;
+}
+
+.carousel-indicators .active {
+    background-color: black;
+}
+
+.portfoilo {
+    text-align: center;
+    background-color: #0a175a;
+    color: aliceblue;
+    padding: 100px 0;
+}
+
+.portfoilo h1 {
+    font-weight: 700;
+    padding-top: 25px;
+
+}
+
+.pnav {
+    border: aliceblue;
+    padding: 35px 0;
+}
+
+.pnav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pnav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 12px 28px;
+    font-size: 17px;
+    display: inline-block;
+    border-radius: 25px;
+    transition: 0.6s;
+    font-weight: 500;
+
+}
+
+.pnav ul li a:hover {
+    background-color: aliceblue;
+    color: #0a175a;
+}
+
+.pnav ul li {
+    list-style: none;
+    border: 2PX solid aliceblue;
+    border-radius: 25PX;
+
+}
+
+.redmore {
+    background-color: red;
+    padding: 40px 0;
+}
+
+@media (max-width:770px) {
+    .redmore {
+        padding: 15px 0;
+        background-color: red;
+    }
+
+}
+
+.redmore h1 {
+    color: aliceblue;
+}
+
+.redmore button {
+    border: none;
+    background-color: aliceblue;
+    color: red;
+    padding: 12px 15px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+@media (max-width:770px) {
+    .redmore button {
+        border: none;
+        background-color: aliceblue;
+        color: red;
+        padding: 8px 12px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+}
+
+.people {
+    padding: 100px 0;
+    background-color: aliceblue;
+}
+
+.people h1 {
+    font-size: 60px;
+}
+
+.p-box {
+    background: white;
+}
+
+
+
+
+.p-image-area img {
+    width: 100px;
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+.p-text {
+    text-align: center;
+}
+
+/*media*/
+
+
+@media (max-width:800px) {
+    .experince h1 {
+        font-weight: bolder;
+        font-size: 50px;
+    }
+}
+
+@media (max-width:600px) {
+    .experince h1 {
+        font-weight: bolder;
+        font-size: 40px;
+    }
+}
+
+@media (max-width:537px) {
+    .experince .exp {
+        padding: 0 25px;
+    }
+}
+
+@media (max-width:500px) {
+    .back .content .bt {
+        padding: 5px 14px;
+        background-color: aliceblue;
+        color: var(--primary-color);
+        border: none;
+        font-weight: 550;
+    }
+}
+
+@media (max-width:1000px) {
+    .back .content h1 {
+        font-weight: 900;
+        color: aliceblue;
+        font-size: 40px;
+    }
+
+    .back .content P {
+        font-size: 15px;
+        color: aliceblue;
+    }
+
+}
+
+@media (max-width:500px) {
+    .back .content h1 {
+        font-weight: 900;
+        color: aliceblue;
+        font-size: 30px;
+    }
+
+    .back .content P {
+        font-size: 12px;
+        color: aliceblue;
+    }
+
+}
+
+@media (max-width:1000px) {
+    .back {
+        background-position: 50%;
+        height: 70vh;
+    }
+}
+
+@media (max-width:1000px) {
+    .back .content {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width:500px) {
+    .back .content .bti {
+        padding: 5px 14px;
+        background-color: var(--primary-color);
+        color: aliceblue;
+        border: none;
+        font-weight: 550;
+    }
+}
+
+@media (max-width:1017px) {
+    .pnav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+        padding: 12px 28px;
+        font-size: 12px;
+        display: inline-block;
+        border-radius: 25px;
+        transition: 0.6s;
+        font-weight: 500;
+
+    }
+}
+
+@media (max-width:1000px) {
+    .pnav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+        padding: 12px 28px;
+        font-size: 10px;
+        display: inline-block;
+        border-radius: 25px;
+        transition: 0.6s;
+        font-weight: 500;
+
+    }
+}

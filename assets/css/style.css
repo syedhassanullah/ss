@@ -39,7 +39,7 @@ body {
 }
 
 .back {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.366), rgba(0, 0, 0, 0.106)), url(../images/backimg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.777), rgba(0, 0, 0, 0.41)), url(../images/backimg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -314,23 +314,88 @@ body {
 
 .p-box {
     background: white;
+    padding: 35px 30px;
+    height: 300px;
+    margin-top: 15px;
 }
 
-
-
+.p-image-area{
+    padding-top: 10px;
+}
 
 .p-image-area img {
-    width: 100px;
+    width: 75px;
     border-radius: 50%;
-    padding: 10px;
-
+    padding: px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .p-text {
-    text-align: center;
+    text-align: left;
+    display: inline-block; 
 }
 
+.p-text p{
+    font-size: px;
+}
+
+.name-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+}
+.name-info h3{
+    font-size: 20px;
+}
+
+.name-info h5{
+    font-size: 15px;
+}
+
+
+
 /*media*/
+
+
+@media (max-width: 1250px) {
+
+    .name-info {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 5px;
+    }
+
+    .p-image-area img {
+        width: 60px;
+        border-radius: 50%;
+        padding: px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .p-box {
+        background: white;
+        padding: 35px 30px;
+        height: 350px;
+        margin-top: 15px;
+    }
+}
+
+@media (769px <= width <= 992px){
+    .p-text p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .p-box {
+        background: white;
+        padding: 35px 30px;
+        height: 250px;
+        margin-top: 15px;
+    }
+
+}
 
 
 @media (max-width: 800px) {

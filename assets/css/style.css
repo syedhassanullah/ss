@@ -10,15 +10,21 @@
 
 body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+
 }
+
 
 .navbar {
     padding: 20px 0;
-
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    width: 100% ;
 }
 
 .navbar .logo {
-    width: 60px;
+    width: 60px;    
 }
 
 .navbar .logo-right {
@@ -38,16 +44,23 @@ body {
     color: var(--primary-color);
 }
 
+.navbar-toggler-icon { 
+    background-color: aliceblue;
+}
+
+
 .back {
     background-image: linear-gradient(rgba(0, 0, 0, 0.777), rgba(0, 0, 0, 0.41)), url(../images/backimg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 90vh;
+    position: relative;
+     
 }
 
 .back .content {
-    padding-top: 150px;
+    padding-top: 300px;
 }
 
 
@@ -89,7 +102,7 @@ body {
 
 .about {
     padding: 100px 0;
-
+    overflow: hidden;
 }
 
 .about img {
@@ -116,7 +129,7 @@ body {
 .red {
     background-color: var(--primary-color);
     padding: 100px 0;
-
+    overflow: hidden;
 }
 
 .red .textleft {
@@ -336,10 +349,6 @@ body {
     display: inline-block; 
 }
 
-.p-text p{
-    font-size: px;
-}
-
 .name-info {
     display: inline-block;
     vertical-align: top;
@@ -353,12 +362,72 @@ body {
     font-size: 15px;
 }
 
+.buttom{
+    padding: 150px 0;
+    background-color: rgba(0, 0, 0, 0.921);
+}
+.buttom .b-img{
+    text-align: center;
+}
+.buttom .b-left{
+    width: 15rem;
+    margin-bottom: 20px;
+}
+
+.buttom .b-right{
+    width: 10rem;
+}
+
+.buttom ul{
+    list-style: none;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.buttom ul h1{
+    color: aliceblue;
+    border-bottom: 2px solid white;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    
+}
+.buttom ul li{
+    color: aliceblue;
+    font-size: 1.2rem;
+    margin-top: 8px;
+}
+
+.buttom ul li:hover{
+    color: rgba(160, 160, 160, 0.995);
+}
+
+.buttom .a-company li{
+    color: aliceblue;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.buttom .a-company li:hover{
+    color: rgba(160, 160, 160, 0.995);
+    font-size: 1rem;
+    margin-top: 11px;
+}
+
 
 
 /*media*/
 
 
 @media (max-width: 1250px) {
+    .buttom ul h1{
+        color: aliceblue;
+        border-bottom: 2px solid white;
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+        
 
     .name-info {
         display: inline-block;
@@ -386,7 +455,11 @@ body {
         font-size: 12px;
     }
 }
-
+@media (max-width: 550px){
+    .p-text p{
+        font-size: 12px;
+    }
+}
 @media (max-width: 768px) {
     .p-box {
         background: white;
@@ -428,7 +501,14 @@ body {
     }
 }
 
-@media (max-width:1000px) {
+@media (max-width:992px) {
+
+    .navbar-collapse{
+        background-color: rgba(0, 0, 0, 0.736);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
     .back .content h1 {
         font-weight: 900;
         color: aliceblue;
@@ -465,7 +545,8 @@ body {
 
 @media (max-width:1000px) {
     .back .content {
-        padding-top: 50px;
+        padding-top: 150px;
+       
     }
 }
 
@@ -505,4 +586,16 @@ body {
         font-weight: 500;
 
     }
+}
+@media (max-width:767px) {
+        .pnav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+            padding: 12px 28px;
+            font-size: 18px;
+            display: block;
+            border-radius: 18px;
+            transition: 0.6s;
+            font-weight: 500;
+        }
 }
